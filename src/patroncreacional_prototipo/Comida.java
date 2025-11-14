@@ -10,9 +10,10 @@ package patroncreacional_prototipo;
  * @author Sebas3101
  */
 public class Comida extends ElementosSnake{
+    private static int contador = 0;
 
-    public Comida(int id, int x, int y) {
-        super("comidaBase",id, x, y);
+    public Comida(int x, int y) {
+        super("comidaBase",++contador, x, y);
     }
 
     

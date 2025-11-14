@@ -23,8 +23,8 @@ public class Inicio {
     }
     
     public static void testClonarComida(){
-        ElementosSnake comida1 = PrototypeRegistry.getElementosSnakeClonados("comidaBase", 0, 10, 10);
-        ElementosSnake comida2 = PrototypeRegistry.getElementosSnakeClonados("comidaBase", 1, 10, 10);
+        ElementosSnake comida1 = PrototypeRegistry.getElementosSnakeClonados("comidaBase", 10, 10);
+        ElementosSnake comida2 = PrototypeRegistry.getElementosSnakeClonados("comidaBase", 10, 10);
         
         System.out.println("Forma"+comida1.getTipoElemento());
         comida1.dibujar();

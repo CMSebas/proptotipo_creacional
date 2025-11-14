@@ -10,9 +10,10 @@ package patroncreacional_prototipo;
  * @author Sebas3101
  */
 public class Snake extends ElementosSnake {
+    private static int contador = 0;
 
-    public Snake(int id, int x, int y) {
-        super("segmento", id, x, y);
+    public Snake(int x, int y) {
+        super("segmento", ++contador, x, y);
     }
 
     @Override

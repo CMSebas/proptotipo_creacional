@@ -19,7 +19,7 @@ public class PrototypeRegistry {
     private static int contadorComidas = 0;
     private static int contadorSegmentos = 0;
     
-    public static ElementosSnake getElementosSnakeClonados(String tipoElemento,int nuId, int nuX, int nuY){
+    public static ElementosSnake getElementosSnakeClonados(String tipoElemento, int nuX, int nuY){
         ElementosSnake comidaBase=repositorioElementos.get(tipoElemento);
         
           if (comidaBase == null) {
@@ -41,8 +41,8 @@ public class PrototypeRegistry {
         return (ElementosSnake) comidaClonada;
     }
     public static void crearFiguraBase(){
-        Comida c=new Comida(0,5,5);
-        Snake s=new Snake(0,5,5);
+        Comida c=new Comida(5,5);
+        Snake s=new Snake(5,5);
         
         repositorioElementos.put("comidaBase", c);
         repositorioElementos.put("segmento",s);
