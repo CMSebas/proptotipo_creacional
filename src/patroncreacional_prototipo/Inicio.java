@@ -16,12 +16,15 @@ public class Inicio {
      */
     public static void main(String[] args) {
         PrototypeRegistry.crearFiguraBase();
-        testClonarComida();
+        Vista ventana = new Vista();
+        ventana.setTitle("Juego Snake - Patrón Prototype");
+        ventana.setLocationRelativeTo(null); // Centrar ventana
+        ventana.setVisible(true);
       
        
         
     }
-    
+    /*
     public static void testClonarComida(){
         ElementosSnake comida1 = PrototypeRegistry.getElementosSnakeClonados("comidaBase", 10, 10);
         ElementosSnake comida2 = PrototypeRegistry.getElementosSnakeClonados("comidaBase", 10, 10);
@@ -37,6 +40,6 @@ public class Inicio {
         //  Mostrar todas las comidas después de actualizar
         
         
-    }
+    }*/
     
 }

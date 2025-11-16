@@ -5,6 +5,7 @@
  */
 package patroncreacional_prototipo;
 
+import java.awt.Graphics;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -17,7 +18,7 @@ public abstract class ElementosSnake implements Cloneable {
     private int id;
     private int x;
     private int y;
-    abstract void dibujar();
+    abstract void dibujar(Graphics g);
 
     public ElementosSnake(String tipoElemento, int id, int x, int y) {
         this.tipoElemento = tipoElemento;

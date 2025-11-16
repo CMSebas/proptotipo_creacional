@@ -5,6 +5,9 @@
  */
 package patroncreacional_prototipo;
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 /**
  *
  * @author Sebas3101
@@ -19,8 +22,14 @@ public class Comida extends ElementosSnake{
     
 
     @Override
-    void dibujar() {
-        System.out.println("Comida ID " + getId() + " en posición (" + getX() + ", " + getY() + ")");
+    void dibujar(Graphics g) {
+        
+    g.setColor(Color.YELLOW);
+    g.fillOval(getX() * 10, getY() * 10, 30, 30);
+
+    // ID en negro
+    g.setColor(Color.BLACK);
+    g.drawString(String.valueOf(getId()), getX() * 10 + 12, getY() * 10 + 18);
     }
 
     
